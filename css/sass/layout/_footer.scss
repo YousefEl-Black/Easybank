@@ -1,0 +1,39 @@
+footer {
+  background-color: $darkBlue;
+  .brand {
+    .logo {
+      img {
+        mix-blend-mode: exclusion;
+      }
+    }
+    .social-media {
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+  ul.links {
+    @include breakpoints(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+    li {
+      a {
+        text-decoration: none;
+        color: $lightGrayishBlue;
+        &:hover {
+          color: $limeGreen;
+        }
+      }
+    }
+  }
+  .we {
+    p {
+      color: $grayishBlue;
+      width: 70%;
+      span {
+        color: $brightCyan;
+        cursor: pointer;
+      }
+    }
+  }
+}

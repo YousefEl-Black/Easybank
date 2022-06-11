@@ -1,0 +1,128 @@
+body {
+  font-size: $fontSize;
+  position: relative;
+  z-index: -2;
+}
+
+.landing-about {
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  z-index: -2;
+  position: relative; 
+  .landing {
+    z-index: -1;
+    position: relative;
+    background-color: $veryLightGray;
+    > .container {
+      position: relative;
+      @include breakpoints(xs) {
+        min-height: 700px;
+        padding-bottom: 30px;
+      }
+      @include breakpoints(md) {
+        min-height: calc(100vh - 60px);
+        padding-bottom: 0px;
+      }
+      > .text {
+        @include breakpoints(xs) {
+          text-align: center;
+        }
+        @include breakpoints(md) {
+          text-align: start;
+        }
+        h1 {
+          @include breakpoints(xs) {
+            font-size: 25px;
+          }
+          @include breakpoints(lg) {
+            font-size: 50px;
+          }
+        }
+        p {
+          color: $grayishBlue;
+        }
+      }
+      .image {
+        z-index: -1;
+        @include breakpoints(xs) {
+          top: 0;
+        }
+        @include breakpoints(md) {
+          margin-right: -200px;
+          right: 0;
+          top: auto;
+        }
+        img {
+          position: relative;
+          top: 0;
+          width: 100%;
+          @include breakpoints(md) {
+            transform: translateY(-50%);
+          }
+          &:last-child {
+            @include breakpoints(md) {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about {
+    position: relative;
+    z-index: -2;
+    background-color: $lightGrayishBlue;
+    .text {
+      p {
+        color: $grayishBlue;
+        line-height: 2;
+        @include breakpoints(md) {
+          width: 50%;
+        }
+      }
+    }
+    .services {
+      width: 100%;
+      .service {
+        background-color: $lightGrayishBlue;
+        p {
+          color: $grayishBlue;
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background-color: $veryLightGray;
+  .service {
+    background-color: $veryLightGray;
+  }
+}
+
+.articles {
+  .cards {
+    .card {
+      .card-body {
+        .card-producer {
+          color: $grayishBlue;
+          font-size: small;
+        }
+        .card-title {
+          color: #000;
+          font-size: 20px;
+          cursor: pointer;
+          &:hover {
+            color: $limeGreen;
+          }
+        }
+        .card-text {
+          color: $grayishBlue;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

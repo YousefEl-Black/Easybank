@@ -1,0 +1,10 @@
+.invite-btn {
+  width: 160px;
+  background-image: linear-gradient(90deg ,$limeGreen, $brightCyan);
+  transition: 0.3s;
+  position: relative;
+  z-index: 9999 !important;
+  &:hover {
+    opacity: 0.5; 
+  }
+}

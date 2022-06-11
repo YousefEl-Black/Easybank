@@ -1,0 +1,258 @@
+.invite-btn {
+  width: 160px;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(136deg, 65%, 51%)), to(hsl(192deg, 70%, 51%)));
+  background-image: linear-gradient(90deg, hsl(136deg, 65%, 51%), hsl(192deg, 70%, 51%));
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  z-index: 9999 !important;
+}
+.invite-btn:hover {
+  opacity: 0.5;
+}
+
+header {
+  z-index: 100;
+  position: relative;
+  background-color: #fff;
+  -ms-box-shadow: 0px -10px 30px 1px black;
+  -webkit-box-shadow: 0px -10px 30px 1px black;
+  -o-box-shadow: 0px -10px 30px 1px black;
+  box-shadow: 0px -10px 30px 1px black;
+}
+header .header {
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header .navbar {
+  margin-bottom: 0;
+}
+header .header .navbar li a {
+  color: hsl(233deg, 8%, 62%);
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: 0.3s ease 0.1s;
+  transition: 0.3s ease 0.1s;
+}
+header .header .navbar li a:hover {
+  color: #000;
+}
+header .header .navbar li a::before {
+  content: "";
+  -webkit-transition: width 0.3s ease 0.1s;
+  transition: width 0.3s ease 0.1s;
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  bottom: -21px;
+  background-color: hsl(136deg, 65%, 51%);
+}
+header .header .navbar li a:hover::before {
+  width: 100%;
+}
+header .header .megamenu .list-shape {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+header .header .megamenu .list-shape img:first-child {
+  display: block;
+}
+header .header .megamenu .list-shape img:last-child {
+  display: none;
+}
+header .header .megamenu .menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 999;
+  top: 90px;
+  width: calc(100% - 30px);
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.367);
+  -webkit-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.367);
+  -o-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.367);
+  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.367);
+}
+header .header .megamenu .menu li {
+  text-align: center;
+  padding: 5px;
+}
+header .header .megamenu .menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+body {
+  font-size: 18px;
+  position: relative;
+  z-index: -2;
+}
+
+.landing-about {
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  z-index: -2;
+  position: relative;
+}
+.landing-about .landing {
+  z-index: -1;
+  position: relative;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.landing-about .landing > .container {
+  position: relative;
+}
+@media (min-width: 1px) {
+  .landing-about .landing > .container {
+    min-height: 700px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .landing-about .landing > .container {
+    min-height: calc(100vh - 60px);
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1px) {
+  .landing-about .landing > .container > .text {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .landing-about .landing > .container > .text {
+    text-align: start;
+  }
+}
+@media (min-width: 1px) {
+  .landing-about .landing > .container > .text h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .landing-about .landing > .container > .text h1 {
+    font-size: 50px;
+  }
+}
+.landing-about .landing > .container > .text p {
+  color: hsl(233deg, 8%, 62%);
+}
+.landing-about .landing > .container .image {
+  z-index: -1;
+}
+@media (min-width: 1px) {
+  .landing-about .landing > .container .image {
+    top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .landing-about .landing > .container .image {
+    margin-right: -200px;
+    right: 0;
+    top: auto;
+  }
+}
+.landing-about .landing > .container .image img {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .landing-about .landing > .container .image img {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media (min-width: 768px) {
+  .landing-about .landing > .container .image img:last-child {
+    width: auto;
+  }
+}
+.landing-about .about {
+  position: relative;
+  z-index: -2;
+  background-color: hsl(220deg, 16%, 96%);
+}
+.landing-about .about .text p {
+  color: hsl(233deg, 8%, 62%);
+  line-height: 2;
+}
+@media (min-width: 768px) {
+  .landing-about .about .text p {
+    width: 50%;
+  }
+}
+.landing-about .about .services {
+  width: 100%;
+}
+.landing-about .about .services .service {
+  background-color: hsl(220deg, 16%, 96%);
+}
+.landing-about .about .services .service p {
+  color: hsl(233deg, 8%, 62%);
+  line-height: 2;
+}
+
+.services {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.services .service {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.articles .cards .card .card-body .card-producer {
+  color: hsl(233deg, 8%, 62%);
+  font-size: small;
+}
+.articles .cards .card .card-body .card-title {
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.articles .cards .card .card-body .card-title:hover {
+  color: hsl(136deg, 65%, 51%);
+}
+.articles .cards .card .card-body .card-text {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 15px;
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+}
+footer .brand .logo img {
+  mix-blend-mode: exclusion;
+}
+footer .brand .social-media img {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  footer ul.links {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+footer ul.links li a {
+  text-decoration: none;
+  color: hsl(220deg, 16%, 96%);
+}
+footer ul.links li a:hover {
+  color: hsl(136deg, 65%, 51%);
+}
+footer .we p {
+  color: hsl(233deg, 8%, 62%);
+  width: 70%;
+}
+footer .we p span {
+  color: hsl(192deg, 70%, 51%);
+  cursor: pointer;
+}
